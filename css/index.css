@@ -1,0 +1,7 @@
+/* Til telefoner (max 600px bredde) */
+@media (max-width: 852px) {
+  body {
+    font-size: 16px; 
+    background-color: white;
+}
+}
