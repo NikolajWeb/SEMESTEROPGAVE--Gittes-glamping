@@ -1,0 +1,2 @@
+# SEMESTEROPGAVE: Gittes glamping
+
