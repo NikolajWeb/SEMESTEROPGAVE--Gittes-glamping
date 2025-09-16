@@ -1,0 +1,179 @@
+body {
+    background-color: #CFD3CE;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;              /* enable flexbox */
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 73, 61, 0.48);
+    z-index: 0;
+}
+
+.hero_text {
+    position: absolute; 
+    z-index: 1;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    
+    & img {
+        width: 70px;
+        justify-self: center;
+    }
+
+    & p {
+        padding-block: 1rem .1rem;
+        font-size: 2.5rem;
+    }
+
+    & h1 {
+        padding-block: 1rem 3rem;
+        font-size: 3.5rem;
+    }
+
+    & button {
+        all: unset;   
+        cursor: pointer;  
+        background-color: transparent;
+        color: white;
+        padding: 2rem 4rem;
+        border: 1px solid;
+        border-color: white;
+        border-radius: 70px 0px;
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/* main_textContainer */
+
+.main_textContainer {
+    background-color: #34626C;
+    color: white;
+    border-radius: 60px 0;
+    margin-top: -55px;
+    position: relative;
+}
+
+.main_text {
+    padding: 3rem;
+    text-align: center;
+
+    & h2 {
+        width: 300px;
+        justify-self: center;
+        font-size: 2.2rem;
+        padding-block: 1rem 3rem;
+    }
+
+    & p {
+        padding-block: 0rem 2rem;
+    }
+
+    & img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    }
+
+    & button {
+        all: unset;   
+        cursor: pointer;  
+        color: white;
+        padding: 2rem 2rem;
+        border: 1px solid;
+        border-radius: 70px 0px;
+        font-size: 2rem;
+        background-color: #839B97;
+        border: none;
+        margin-block: 3rem 5rem;
+    }
+}
+
+
+/* user_container */
+
+.user_container {
+    padding: 5rem 1rem;
+}
+
+.user_headline {
+    background-color: #C6B497;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 2.2rem;
+    border-radius: 60px 0px;
+    text-align: center;
+}
+
+.users_info {
+    background-color: #839B97;
+    margin-block: 4rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 60px 0px;
+    & h2 {
+        font-size: 1.3rem;
+        padding-bottom: .8rem;
+    }
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #2A4F57;
+    padding: 5rem;
+}
+
+.SoMe-img {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 40px;
+    gap: 20px;
+    & img {
+    filter: invert(50);
+    width: 40px;
+    }
+}
+
+.gites-glamping {
+    color: white;
+    display: flex;         /* makes children (img + p) align in a row */
+    align-items: center;   /* vertically centers them */
+    justify-content: center; /* optional: centers the row horizontally */
+    gap: 10px;      
+    font-size: 1.5rem;
+    & img {
+        width: 40px;
+    }
+}
