@@ -4,7 +4,7 @@
 export async function fetchProducts() {
     try {
         // Forsøger at hente data fra API'et (serverens URL)
-        const response = await fetch('https://glamping-rqu9j.ondigitalocean.app/');
+        const response = await fetch('https://glamping-rqu9j.ondigitalocean.app/reviews/');
 
         // Konverterer svaret fra API'et til JSON-format
         const data = await response.json();
