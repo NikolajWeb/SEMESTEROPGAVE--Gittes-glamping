@@ -1,0 +1,3 @@
+import { BurgerMenu } from "./components/burger-menu.js";
+
+BurgerMenu();
