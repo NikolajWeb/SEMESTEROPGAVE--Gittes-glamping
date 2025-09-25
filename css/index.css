@@ -1,6 +1,7 @@
 /* CSS Components */
 @import url("./css-components/forside.css");
 
+@import url("./css-components/kontakt.css");
 
 * {
   box-sizing: border-box;

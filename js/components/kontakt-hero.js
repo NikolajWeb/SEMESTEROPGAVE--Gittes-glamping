@@ -1,12 +1,17 @@
-const heroContainer = document.querySelector('.hero');
+const heroContainer = document.querySelector('.kontaktHero');
 
-export const hero = () => {
+export const kontaktHero = () => {
   if (!heroContainer) return;
 
   heroContainer.insertAdjacentHTML("beforeend", `
     <div class="burger" id="burger">
       <img src="assets/icons/bars-solid.svg" alt="Burger-menu">
     </div>
+    
+    <div class="logo" id="logo">
+      <a href="index.html"><img src="assets/logo/logo.png" class="logo"></a>
+    </div>
+    
 
     <ul id="nav-links">
       <li><a href="kontakt.html">1</a></li>
@@ -15,12 +20,9 @@ export const hero = () => {
       <li><a href="kontakt.html">4</a></li>
     </ul>
 
-    <img src="assets/heros/forside.jpg" alt="Forside">
+    <img src="assets/heros/kontakt.jpg" alt="Forside">
     <div class="hero_text">
-      <img src="assets/logo/logo.png" alt="Logo">
-      <p>Gittes</p>
-      <h1>Glamping</h1>
-      <button>Book nu</button>
+      <h1>Kontakt Gitte</h1>
     </div>
   `);
 };

@@ -1,0 +1,195 @@
+body {
+    background-color: #CFD3CE;
+    font-family: zen loop;
+}
+
+
+/* Hero */
+
+.kontaktHero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontaktHero img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Overlay */
+.kontaktHero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 73, 61, 0.48);
+    z-index: 0;
+}
+
+.hero_text {
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+
+    & h1 {
+        padding-block: 1rem 3rem;
+        font-size: 5rem;
+        font-weight: 400;
+        margin-top: -50px;
+    }
+}
+
+
+/* Burger menu */
+.burger {
+    background-color: #839B97;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 15px 0px;
+
+    & img {
+        width: 30px;
+        filter: invert(50);
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.burger-menu.active {
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    background: #849B97;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+#nav-links.active {
+    transform: translateY(0);
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-block: 4rem;
+    line-height: 50px;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.logo {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    & img {
+        width: 50px;
+        z-index: 2;
+        position: relative;
+    }
+}
+
+
+/* Kontatk form */
+
+.kontakt-container {
+    background-color: #34626C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 60px 0 0 0;
+    margin-top: -160px;
+    position: relative;
+
+    & h1 {
+        font-size: 3rem;
+        padding-block: 2rem;
+        font-weight: 400;
+    }
+
+    & p {
+        font-size: 1.3rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+    background: transparent;
+    border: 1px solid #dcebe8;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #dcebe8;
+    font-size: 14px;
+    outline: none;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+option {
+    color: white;
+    background-color: #34626C;
+}
+
+#besked {
+    height: 150px;
+}
+
+.submit-btn {
+    all: unset;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    border: 1px solid;
+    border-radius: 70px 0px;
+    font-size: 2rem;
+    background-color: #839B97;
+    border: none;
+    margin-block: 3rem 5rem;
+}
+
+.form-success {
+  display: none;
+  color: green;
+  font-weight: bold;
+}

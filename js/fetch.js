@@ -1,16 +1,10 @@
 /*  FETCH DATA  */
 
 // En funktion som henter produkter fra en server
-export async function fetchProducts() {
-<<<<<<< Updated upstream
-    try {
-        // Forsøger at hente data fra API'et (serverens URL)
-        const response = await fetch('https://glamping-rqu9j.ondigitalocean.app/reviews/');
-=======
+export async function fetchReviews() {
   try {
     // Forsøger at hente data fra API'et (serverens URL)
-    const response = await fetch("https://glamping-rqu9j.ondigitalocean.app/");
->>>>>>> Stashed changes
+    const response = await fetch("https://glamping-rqu9j.ondigitalocean.app/reviews");
 
     // Konverterer svaret fra API'et til JSON-format
     const data = await response.json();
@@ -25,7 +19,7 @@ export async function fetchProducts() {
   }
 }
 
-//glamping-rqu9j.ondigitalocean.app/stays/
+
 
 export async function fetchStays() {
   try {

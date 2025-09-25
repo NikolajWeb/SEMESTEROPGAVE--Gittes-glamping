@@ -1,4 +1,4 @@
-import { fetchProducts } from "../fetch.js";
+import { fetchReviews } from "../fetch.js";
 
 const userContainer = document.querySelector(".user_container");
 
@@ -17,10 +17,10 @@ export const userTmpl = (user) => {
 export const renderUsers = async () => {
   if (!userContainer) return;
 
-  const users = await fetchProducts();
+  const users = await fetchReviews();
 
   if (users.length > 0) {
-    // overskrift
+    // Overskrift
     userContainer.insertAdjacentHTML(
       "beforeend",
       `
@@ -30,7 +30,7 @@ export const renderUsers = async () => {
     `
     );
 
-    // loop gennem users
+    // Loop gennem users
     users.forEach((user) => {
       userContainer.insertAdjacentHTML("beforeend", userTmpl(user));
     });

@@ -1,4 +1,6 @@
 
+/* Forside */
+
 import { footer } from "./components/footer.js";
 
 footer();
@@ -18,3 +20,15 @@ hero()
 import { initBurgerMenu } from "./components/hero.js";
 
 initBurgerMenu()
+
+
+
+/* Konakt side */
+
+import { kontaktHero } from "./components/kontakt-hero.js";
+
+kontaktHero()
+
+import { kontakt } from "./components/kontakt-form.js";
+
+kontakt()
